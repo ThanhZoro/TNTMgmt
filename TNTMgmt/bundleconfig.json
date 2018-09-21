@@ -1,0 +1,25 @@
+[
+  {
+    "outputFileName": "wwwroot/css/site.min.css",
+    "inputFiles": [
+      "wwwroot/assets/css/icons/icomoon/styles.css",
+      "wwwroot/assets/css/bootstrap.css",
+      "wwwroot/assets/css/core.css",
+      "wwwroot/assets/css/components.css",
+      "wwwroot/assets/css/colors.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/site.min.js",
+    "inputFiles": [
+      "wwwroot/assets/js/core/libraries/jquery.min.js",
+      "wwwroot/assets/js/core/libraries/bootstrap.min.js",
+      "wwwroot/assets/js/core/app.js",
+      "wwwroot/assets/js/plugins/notifications/pnotify.min.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    }
+  }
+]

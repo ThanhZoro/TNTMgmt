@@ -1,0 +1,17 @@
+version: '2'
+services:
+  {{ container }}:
+    mem_reservation: 524288000
+    milli_cpu_reservation: 200
+    scale: 1
+    start_on_create: true
+    drain_timeout_ms: {{ DRAIN_TIMEOUT_MS | default('5000') }}
+    health_check:
+      response_timeout: 2000
+      healthy_threshold: 2
+      port: 7017
+      unhealthy_threshold: 3
+      initializing_timeout: 60000
+      interval: 2000
+      strategy: none
+      reinitializing_timeout: 60000

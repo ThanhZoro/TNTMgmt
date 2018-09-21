@@ -1,0 +1,157 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 17/09/2018 08:48
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-mail:before { content: "\f100"; }
+.flaticon-checklist:before { content: "\f101"; }
+.flaticon-edit-document:before { content: "\f102"; }
+.flaticon-file-tree:before { content: "\f103"; }
+.flaticon-next:before { content: "\f104"; }
+.flaticon-clock:before { content: "\f105"; }
+.flaticon-team:before { content: "\f106"; }
+.flaticon-clock-1:before { content: "\f107"; }
+.flaticon-list:before { content: "\f108"; }
+.flaticon-users:before { content: "\f109"; }
+.flaticon-previous:before { content: "\f10a"; }
+.flaticon-edit:before { content: "\f10b"; }
+.flaticon-photograph:before { content: "\f10c"; }
+.flaticon-settings:before { content: "\f10d"; }
+.flaticon-add-user:before { content: "\f10e"; }
+.flaticon-rate:before { content: "\f10f"; }
+.flaticon-settings-1:before { content: "\f110"; }
+.flaticon-message:before { content: "\f111"; }
+.flaticon-gender:before { content: "\f112"; }
+.flaticon-checklist-1:before { content: "\f113"; }
+.flaticon-hotel:before { content: "\f114"; }
+.flaticon-checklist-2:before { content: "\f115"; }
+.flaticon-money:before { content: "\f116"; }
+.flaticon-filter:before { content: "\f117"; }
+.flaticon-sheet:before { content: "\f118"; }
+.flaticon-phone-receiver:before { content: "\f119"; }
+.flaticon-closed-envelope-circle:before { content: "\f11a"; }
+.flaticon-phone:before { content: "\f11b"; }
+.flaticon-comments:before { content: "\f11c"; }
+.flaticon-telephone-symbol-button:before { content: "\f11d"; }
+.flaticon-calendar-with-spring-binder-and-date-blocks:before { content: "\f11e"; }
+.flaticon-shopping-cart-black-shape:before { content: "\f11f"; }
+.flaticon-earth-globe:before { content: "\f120"; }
+.flaticon-multiple-users-silhouette:before { content: "\f121"; }
+.flaticon-facebook-placeholder-for-locate-places-on-maps:before { content: "\f122"; }
+.flaticon-coverage-level:before { content: "\f123"; }
+.flaticon-sms-of-surveillance-system:before { content: "\f124"; }
+.flaticon-add-people-interface-symbol-of-black-person-close-up-with-plus-sign-in-small-circle:before { content: "\f125"; }
+.flaticon-sms:before { content: "\f126"; }
+.flaticon-home-button:before { content: "\f127"; }
+.flaticon-hotel-with-three-floors:before { content: "\f128"; }
+.flaticon-three-buildings:before { content: "\f129"; }
+.flaticon-settings-work-tool:before { content: "\f12a"; }
+.flaticon-barcode-product:before { content: "\f12b"; }
+.flaticon-sent-mail:before { content: "\f12c"; }
+.flaticon-man-user:before { content: "\f12d"; }
+.flaticon-eye:before { content: "\f12e"; }
+.flaticon-closed-lock:before { content: "\f12f"; }
+.flaticon-information:before { content: "\f130"; }
+.flaticon-next-1:before { content: "\f131"; }
+.flaticon-telephone:before { content: "\f132"; }
+.flaticon-24-hourse-support:before { content: "\f133"; }
+.flaticon-win:before { content: "\f134"; }
+.flaticon-sale:before { content: "\f135"; }
+.flaticon-old-typical-phone:before { content: "\f136"; }
+.flaticon-ring:before { content: "\f137"; }
+.flaticon-hide:before { content: "\f138"; }
+.flaticon-view:before { content: "\f139"; }
+.flaticon-drop-down-arrow:before { content: "\f13a"; }
+    
+    $font-Flaticon-mail: "\f100";
+    $font-Flaticon-checklist: "\f101";
+    $font-Flaticon-edit-document: "\f102";
+    $font-Flaticon-file-tree: "\f103";
+    $font-Flaticon-next: "\f104";
+    $font-Flaticon-clock: "\f105";
+    $font-Flaticon-team: "\f106";
+    $font-Flaticon-clock-1: "\f107";
+    $font-Flaticon-list: "\f108";
+    $font-Flaticon-users: "\f109";
+    $font-Flaticon-previous: "\f10a";
+    $font-Flaticon-edit: "\f10b";
+    $font-Flaticon-photograph: "\f10c";
+    $font-Flaticon-settings: "\f10d";
+    $font-Flaticon-add-user: "\f10e";
+    $font-Flaticon-rate: "\f10f";
+    $font-Flaticon-settings-1: "\f110";
+    $font-Flaticon-message: "\f111";
+    $font-Flaticon-gender: "\f112";
+    $font-Flaticon-checklist-1: "\f113";
+    $font-Flaticon-hotel: "\f114";
+    $font-Flaticon-checklist-2: "\f115";
+    $font-Flaticon-money: "\f116";
+    $font-Flaticon-filter: "\f117";
+    $font-Flaticon-sheet: "\f118";
+    $font-Flaticon-phone-receiver: "\f119";
+    $font-Flaticon-closed-envelope-circle: "\f11a";
+    $font-Flaticon-phone: "\f11b";
+    $font-Flaticon-comments: "\f11c";
+    $font-Flaticon-telephone-symbol-button: "\f11d";
+    $font-Flaticon-calendar-with-spring-binder-and-date-blocks: "\f11e";
+    $font-Flaticon-shopping-cart-black-shape: "\f11f";
+    $font-Flaticon-earth-globe: "\f120";
+    $font-Flaticon-multiple-users-silhouette: "\f121";
+    $font-Flaticon-facebook-placeholder-for-locate-places-on-maps: "\f122";
+    $font-Flaticon-coverage-level: "\f123";
+    $font-Flaticon-sms-of-surveillance-system: "\f124";
+    $font-Flaticon-add-people-interface-symbol-of-black-person-close-up-with-plus-sign-in-small-circle: "\f125";
+    $font-Flaticon-sms: "\f126";
+    $font-Flaticon-home-button: "\f127";
+    $font-Flaticon-hotel-with-three-floors: "\f128";
+    $font-Flaticon-three-buildings: "\f129";
+    $font-Flaticon-settings-work-tool: "\f12a";
+    $font-Flaticon-barcode-product: "\f12b";
+    $font-Flaticon-sent-mail: "\f12c";
+    $font-Flaticon-man-user: "\f12d";
+    $font-Flaticon-eye: "\f12e";
+    $font-Flaticon-closed-lock: "\f12f";
+    $font-Flaticon-information: "\f130";
+    $font-Flaticon-next-1: "\f131";
+    $font-Flaticon-telephone: "\f132";
+    $font-Flaticon-24-hourse-support: "\f133";
+    $font-Flaticon-win: "\f134";
+    $font-Flaticon-sale: "\f135";
+    $font-Flaticon-old-typical-phone: "\f136";
+    $font-Flaticon-ring: "\f137";
+    $font-Flaticon-hide: "\f138";
+    $font-Flaticon-view: "\f139";
+    $font-Flaticon-drop-down-arrow: "\f13a";

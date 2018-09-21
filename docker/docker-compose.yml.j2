@@ -1,0 +1,32 @@
+version: '2'
+volumes:
+  microservices:
+    external: true
+    driver: rancher-nfs
+services:
+  {{ container }}:
+    image: mobiletech/aspnetcore:2.0-nodejs
+    environment:
+      MODULE_COMMAND: {{ MODULE_COMMAND }}
+      ASPNETCORE_ENVIRONMENT: {{ ASPNETCORE_ENVIRONMENT | default('Production') }}
+      IS_SERVER: {{ IS_SERVER | default('gtmjs.com') }}
+      GATEWAY_API_URL: {{ GATEWAY_API_URL | default('api.gtmjs.com') }}
+      ES_HOST: {{ ES_HOST | default('es') }}
+      ES_PORT: {{ ES_PORT | default('9200') }}
+      LOADBALANCER: {{ LOADBALANCER | default('loadbalancer') }}
+      RABBITMQ_HOST: {{ RABBITMQ_HOST | default('rabbitmq') }}
+      RABBITMQ_USERNAME: {{ RABBITMQ_USERNAME }}
+      RABBITMQ_PASSWORD: {{ RABBITMQ_PASSWORD }}
+    stdin_open: true
+    working_dir: "/var/www/microservices/{{ module_name }}/releases/{{ ansistrano_release_version }}"
+    external_links:
+    - es-cluster/es-client:es
+    - rabbitmq-3/rabbitmq:rabbitmq
+    - load-balancer/frontend-lb:loadbalancer
+    volumes:
+    - microservices:/var/www/microservices
+    - /etc/localtime:/etc/localtime:ro
+    tty: true
+    labels:
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.affinity:host_label: web=1
